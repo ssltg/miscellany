@@ -1,4 +1,5 @@
 @section('scripts')
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
     <script>
         var editor_config = {
             path_absolute : "/",
@@ -12,10 +13,6 @@
                 "fullpage mention media"
             ],
             toolbar: "styleselect | bold italic underline strikethrough forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image table media",
-            // mobile: {
-            //     theme: 'mobile',
-            //     plugins: [ 'save', 'lists', 'autolink', 'mention']
-            // },
             nanospell_server:"php",
             browser_spellcheck: true,
             relative_urls: false,
@@ -68,5 +65,4 @@
 @endsection
 
 @section('styles')
-    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
 @endsection

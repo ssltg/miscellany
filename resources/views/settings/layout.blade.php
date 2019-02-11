@@ -51,6 +51,7 @@
                         {!! Form::select('editor', [
                             '' => __('profiles.settings.editors.default'),
                             'summernote' => __('profiles.settings.editors.summernote'),
+                            'tinymce5' => __('profiles.settings.editors.tinymce5'),
                         ], null, ['class' => 'form-control']) !!}
                     </div>
                     <button class="btn btn-primary">
