@@ -87,19 +87,13 @@
                     @endif
                 </ol>
                 @endif
-                <h1 class="hidden-xs">
-                    {{ $title or "Page Title" }}
-                    <small>{{ $description or null }}</small>
-                    @if (!empty($headerExtra))
-                        {!! $headerExtra !!}
-                    @endif
-                </h1>
             </section>
 
             <!-- Main content -->
             <section class="content">
                 <!-- Your Page Content Here -->
                 @include('partials.success')
+                @yield('entity-header')
                 @yield('content')
             </section><!-- /.content -->
         </div><!-- /.content-wrapper -->

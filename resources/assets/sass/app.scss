@@ -576,6 +576,13 @@ div.mce-fullscreen {
 
 .list-group-item {
   word-break: break-all;
+
+  &:first-child {
+    border-top: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .input-error {
@@ -653,6 +660,47 @@ td.breakable {
 .btn-group {
   .dropdown-toggle {
     height: 36px;
+  }
+}
+
+
+.entity-header {
+  margin-bottom: 15px;
+  font-size: 18px;
+  .parent {
+  }
+
+  .entity {
+    font-size: 22px;
+  }
+
+  .tags {
+    display: inline-block;
+    a {
+      background-color: #e8eaeb;
+      color: #586068;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 15px;
+      padding: 2px 8px;
+      margin: 0 2px;
+
+      &:hover {
+        background-color: #0E2231;
+        color: white;
+      }
+    }
+  }
+
+  .actions {
+    float: right;
+  }
+}
+
+.box-profile {
+  .list-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 

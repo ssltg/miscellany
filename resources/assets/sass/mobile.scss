@@ -22,4 +22,14 @@
   .navbar-nav .campaign-menu .campaign-image {
     margin-right: 0;
   }
+
+  .entity-header {
+    .actions {
+      float: none;
+
+      .entity-actions-update {
+        float: right;
+      }
+    }
+  }
 }

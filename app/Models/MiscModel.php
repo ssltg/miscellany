@@ -104,8 +104,8 @@ abstract class MiscModel extends Model
 
         if ($stripSpecial) {
             $pureHistory = str_replace('"', '\'', $pureHistory);
-//            $pureHistory = str_replace('&gt;', null, $pureHistory);
-//            $pureHistory = str_replace('&lt;', null, $pureHistory);
+            $pureHistory = str_replace('&gt;', null, $pureHistory);
+            $pureHistory = str_replace('&lt;', null, $pureHistory);
             //$pureHistory = htmlentities(htmlspecialchars($pureHistory));
         }
 
@@ -339,8 +339,11 @@ abstract class MiscModel extends Model
     /**
      * @return mixed
      */
-    public function getEntityType()
+    public function getEntityType($plural = false)
     {
+        if ($plural) {
+            return Str::plural($this->entityType);
+        }
         return $this->entityType;
     }
 
@@ -351,6 +354,23 @@ abstract class MiscModel extends Model
     public function getLink($route = 'show')
     {
         return route($this->entity->pluralType() . '.' . $route, $this->id);
+    }
+
+    public function url($route = 'show') {
+        return $this->getLink($route);
+    }
+
+    public function indexUrl()
+    {
+        // If the user activated nested views by default, go back to it.
+        $name = Str::plural($this->getEntityType());
+        $entityIndexRoute = route($name . '.index');
+        if (auth()->check() && auth()->user()->defaultNested) {
+            if (\Illuminate\Support\Facades\Route::has($name . '.tree')) {
+                $entityIndexRoute = route($name . '.tree');
+            }
+        }
+        return $entityIndexRoute;
     }
 
     /**

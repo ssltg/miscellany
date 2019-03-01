@@ -113,6 +113,11 @@ Route::group([
         Route::get('/locations/{location}/organisations', 'LocationController@organisations')->name('locations.organisations');
         Route::get('/locations/{location}/quests', 'LocationController@quests')->name('locations.quests');
         Route::get('/locations/{location}/journals', 'LocationController@journals')->name('locations.journals');
+        // General
+        //Route::get('/locations/{location}/relations', 'RelationController@index')->name('locations.relations');
+        Route::get('/locations/{location}/attributes', 'AttributeController@index')->name('locations.attributes');
+        Route::get('/locations/{location}/notes', 'EntityNoteController@index')->name('locations.notes');
+        Route::get('/locations/{location}/reminders', 'EntityEventController@index')->name('locations.reminders');
 
         // Organisation menu
         Route::get('/organisations/{organisation}/members', 'OrganisationController@members')->name('organisations.members');

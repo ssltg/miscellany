@@ -144,6 +144,7 @@ return [
             'limit'         => 'Each entity can have a maximum of :max files uploaded to it.',
             'limitations'   => 'Supported formats: jpg, png, gif, and pdf. Max file size: :size',
         ],
+        'none' => 'No files yet.',
         'title'     => 'Entity Files for :name',
     ],
     'filter'            => 'Filter',
