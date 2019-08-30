@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'description'   => 'Einige hilfreiche Tipps und Tricks, um dir mit Kanka zu helfen',
+    'description'   => 'Einige hilfreiche Tipps und Tricks, um dir mit ' . config('app.name') . ' zu helfen',
     'dice'          => [
         'description'               => 'Allgemeine Würfelwürfe sind möglich, wenn du "d20", "4d4+4", "d%" (Prozentwürfe) oder "df" (FUDGE-würfe) schreibst.',
         'description_attributes'    => 'Es ist auch möglich ein Charakterattribut zu verwenden mittels {character.attribute_name} Syntac. Zum Beispiel, {character.level}d6+{character.wisdom}.',

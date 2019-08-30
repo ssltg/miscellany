@@ -36,7 +36,7 @@ return [
             'limit' => 'Nombre d\'export maximal par jour excédé pour cette campagne.',
         ],
         'helper'        => 'Export de la campagne. Une notification content un lien de téléchargement sera généré.',
-        'success'       => 'L\'export de la campagne est en préparation. Une notification dans Kanka avec un lien de téléchargement sera généré dès que c\'est prêt.',
+        'success'       => 'L\'export de la campagne est en préparation. Une notification dans ' . config('app.name') . ' avec un lien de téléchargement sera généré dès que c\'est prêt.',
         'title'         => 'Export Campagne :name',
     ],
     'fields'                            => [
@@ -91,7 +91,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Joindre la campagne de :name</a>',
-            'subject'   => ':name t\'as invité à rejoindre la campagne \':campagne\' on kanka.io! Utilises ce lien pour accepter leur invitation.',
+            'subject'   => ':name t\'as invité à rejoindre la campagne \':campagne\' on ' . config('app.site_name') . '! Utilises ce lien pour accepter leur invitation.',
             'title'     => 'Invitation de :name',
         ],
         'error'         => [
@@ -262,7 +262,7 @@ return [
             'calendars'     => 'Un endroit pour définir les calendriers de ton monde.',
             'characters'    => 'Les peuples de ton monde.',
             'conversations' => 'Conversations fictives entre des personnages ou entre membres de la campagne.',
-            'dice_rolls'    => 'Pour ceux qui utilisent Kanka pour une campagne JdR, un système pour des jets de dés.',
+            'dice_rolls'    => 'Pour ceux qui utilisent ' . config('app.name') . ' pour une campagne JdR, un système pour des jets de dés.',
             'events'        => 'Jours fériers, festivaux, désastres, anniversaires, guerres.',
             'families'      => 'Clans ou familles, leurs relations et leur membres.',
             'items'         => 'Armes, véhicules, artéfacts, objets légendaires.',

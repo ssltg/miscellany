@@ -35,9 +35,9 @@ return [
     'register'  => [
         'already_account'           => 'Already have an account?',
         'email'                     => [
-            'body'  => '<p>Welcome to kanka.io!</p><p>Your account has been created using your email address.</p>',
+            'body'  => '<p>Welcome to ' . config('app.site_name') . '!</p><p>Your account has been created using your email address.</p>',
             'login' => 'Log in',
-            'title' => 'Welcome to kanka.io!',
+            'title' => 'Welcome to ' . config('app.site_name') . '!',
         ],
         'errors'                    => [
             'email_already_taken'   => 'An account with this email is already registered.',

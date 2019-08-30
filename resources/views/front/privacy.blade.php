@@ -22,16 +22,16 @@
         <div class="container">
             <div class="section-heading">
                 <h3>Information gathering and usage</h3>
-                <p>When registering for Kanka we ask for information such as your name and email address. Your information is only used internally and won't be shared with others.</p>
+                <p>When registering for {{config('app.name')}} we ask for information such as your name and email address. Your information is only used internally and won't be shared with others.</p>
 
-                <p>Kanka collects the email addresses of those who communicate with us via email, and information submitted through voluntary activities such as site registrations or participation in surveys. Kanka also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve Kanka and the quality of our service. We only collect personal data that is required to provide our services, and we only store it insofar that it is necessary to deliver these services.</p>
+                <p>{{config('app.name')}} collects the email addresses of those who communicate with us via email, and information submitted through voluntary activities such as site registrations or participation in surveys. {{config('app.name')}} also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve Kanka and the quality of our service. We only collect personal data that is required to provide our services, and we only store it insofar that it is necessary to deliver these services.</p>
                 <p><br /></p>
                 <h3>Your data</h3>
-                <p>Kanka uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run Kanka. Although Kanka owns the code, databases, and all rights to the Kanka application, you retain all rights to your data. We will never share your personal data with a 3rd party without your prior authorization, and we will never sell data to 3rd parties. We process data inside of the European Union and Switzerland. We transfer data with third-parties necessary to our ability to provide our services, all of whom are GDPR-compliant and provide the necessary safeguards required if they are outside of the EU.</p>
+                <p>{{config('app.name')}} uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run {{config('app.name')}}. Although {{config('app.name')}} owns the code, databases, and all rights to the {{config('app.name')}} application, you retain all rights to your data. We will never share your personal data with a 3rd party without your prior authorization, and we will never sell data to 3rd parties. We process data inside of the European Union and Switzerland. We transfer data with third-parties necessary to our ability to provide our services, all of whom are GDPR-compliant and provide the necessary safeguards required if they are outside of the EU.</p>
                 <p><br /></p>
 
                 <h3>Cookies</h3>
-                <p>We use cookies to store visitors preferences, customize Web page content based on visitors browser type or other information that the visitor sends. Cookies are required to use Kanka.</p>
+                <p>We use cookies to store visitors preferences, customize Web page content based on visitors browser type or other information that the visitor sends. Cookies are required to use {{config('app.name')}}.</p>
                 <p><br /></p>
 
                 <h3>Ad servers</h3>

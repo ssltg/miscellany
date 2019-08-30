@@ -41,7 +41,7 @@ class UserDeleted extends Mailable
     public function build()
     {
         return $this
-            ->from(['address' => 'no-reply@kanka.io', 'name' => 'Kanko Support'])
+            ->from(['address' => config('mail.address.from.address'), 'name' => config('mail.address.from.name')])
             ->subject('Account #' . $this->id . ' deleted - ' . $this->email)
             ->view('emails.goodbye');
     }

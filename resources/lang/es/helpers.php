@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'description'   => 'Algunos trucos y consejos para que sea más sencilla tu estancia en Kanka',
+    'description'   => 'Algunos trucos y consejos para que sea más sencilla tu estancia en ' . config('app.name'),
     'dice'          => [
         'description'               => 'Es posible hacer tiradas de dados genéricas escribiendo "d20", "4d4+4", "d%" para porcentual y "df" para fudge.',
         'description_attributes'    => 'También se puede obtener el atributo de un personaje utilizando el código {character.nombre_atributo}. Por ejemplo: {character.nivel}d6+{character.sabiduria}.',

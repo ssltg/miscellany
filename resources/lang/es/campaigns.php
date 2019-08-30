@@ -36,7 +36,7 @@ return [
             'limit' => 'Has alcanzado el máximo de una exportación por día. Por favor, inténtalo de nuevo mañana.',
         ],
         'helper'        => 'Exportar campaña. Recibirás una notificación con el enlace de descarga.',
-        'success'       => 'Tu campaña se está preparando para exportar. Recibirás una notificación en Kanka a un zip descargable en cuanto esté lista.',
+        'success'       => 'Tu campaña se está preparando para exportar. Recibirás una notificación en ' . config('app.name') . ' a un zip descargable en cuanto esté lista.',
         'title'         => 'Exportar campaña :name',
     ],
     'fields'                            => [
@@ -91,7 +91,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Unirse a la campaña de :name </a>',
-            'subject'   => '¡:name te ha invitado a que te unas a su campaña ":campaign" en kanka.io! Usa el siguiente enlace para aceptar su invitación.',
+            'subject'   => '¡:name te ha invitado a que te unas a su campaña ":campaign" en ' . config('app.site_name') . '! Usa el siguiente enlace para aceptar su invitación.',
             'title'     => 'Invitación de :name',
         ],
         'error'         => [
@@ -262,7 +262,7 @@ return [
             'calendars'     => 'El sitio para definir los calendarios de tu mundo.',
             'characters'    => 'Las personas que viven en tu mundo.',
             'conversations' => 'Conversaciones ficticias entre personajes o entre usuarios de la campaña.',
-            'dice_rolls'    => 'Una manera de manejar las tiradas de dados para aquellos que usan Kanka para campañas de rol.',
+            'dice_rolls'    => 'Una manera de manejar las tiradas de dados para aquellos que usan ' . config('app.name') . ' para campañas de rol.',
             'events'        => 'Celebraciones, festivales, desastres, cumpleaños, guerras...',
             'families'      => 'Clanes o familias, sus relaciones y sus miembros.',
             'items'         => 'Armas, vehículos, reliquias, pociones...',

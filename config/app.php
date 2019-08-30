@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Kanka'),
 
     /*
     |--------------------------------------------------------------------------
@@ -222,7 +222,6 @@ return [
     */
 
     'aliases' => [
-
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -274,4 +273,19 @@ return [
         'UserPermission' => App\Facades\UserPermission::class,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Internal Domains
+    |--------------------------------------------------------------------------
+    |
+    | This array of domains will be conted as "internally" for special handling
+    | of links.
+    |
+    */
+
+    'internal_domains' => [
+        'kanka.io',
+        'kanka.loc',
+        'dev.kanka-io'
+    ]
 ];

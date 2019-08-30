@@ -19,7 +19,7 @@
     <meta property="og:title" content="{{ $title ?? __('front.meta.title') }} - {{ config('app.name') }}" />
     <meta property="og:site_name" content="{{ config('app.site_name') }}" />
 
-    <title>{{ $error }} - {{ config('app.name', 'Kanka') }}</title>
+    <title>{{ $error }} - {{ config('app.name') }}</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

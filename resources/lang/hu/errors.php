@@ -18,10 +18,10 @@ return [
     ],
     '503'       => [
         'body'  => [
-            '1' => 'A Kanka jelenleg karbantartás alatt áll - ez általában azt jelenti, hogy jön egy frissítés!',
+            '1' => 'A ' . config('app.name') . ' jelenleg karbantartás alatt áll - ez általában azt jelenti, hogy jön egy frissítés!',
             '2' => 'Elnézést kérünk a kellemetlenségért. Pár percen belül minden rendben lesz.',
         ],
         'title' => 'Karbantartás',
     ],
-    'footer'    => 'Ha további segítségre van szükséged, kérjük, keress meg minket a hello@kanka.io email-címen vagy a :discord szerverünkön.',
+    'footer'    => 'Ha további segítségre van szükséged, kérjük, keress meg minket a hello@' . config('app.site_name') . ' email-címen vagy a :discord szerverünkön.',
 ];

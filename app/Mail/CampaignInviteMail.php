@@ -42,7 +42,7 @@ class CampaignInviteMail extends Mailable
     public function build()
     {
         return $this
-            ->from(['address' => 'no-reply@kanka.io', 'name' => 'Kanko Support'])
+            ->from(['address' => config('mail.address.from.address'), 'name' => config('mail.address.from.name')])
             ->subject(trans('campaigns.invites.email.title', ['name' => e($this->user->name)]))
             ->view('emails.invite');
     }

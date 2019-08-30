@@ -107,7 +107,7 @@ return [
         'is_recurring'  => 'An event can be set to recurring. It will reappear every year on the same date.',
         'months'        => 'Your calendar should have at least 2 months.',
         'moons'         => 'Adding moons will make them show up in the calendar on every full moon.',
-        'seasons'       => 'Create seasons for your calendar by providing when each of them start. Kanka will take care of the rest.',
+        'seasons'       => 'Create seasons for your calendar by providing when each of them start. ' . config('app.name') . ' will take care of the rest.',
         'weekdays'      => 'Set your weekday names. At least 2 weekdays are required.',
         'years'         => 'Some years are so important that they have their own name.',
     ],

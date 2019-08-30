@@ -3,7 +3,7 @@
 return [
     'account'   => [
         'actions'           => [
-            'social'            => 'Kanka bejelentkezésre váltás',
+            'social'            => config('app.name') . ' bejelentkezésre váltás',
             'update_email'      => 'E-mail megváltoztatása',
             'update_password'   => 'Jelszó megváltoztatása',
         ],
@@ -13,17 +13,17 @@ return [
         'password'          => 'Jelszó megváltoztatása',
         'password_success'  => 'A jelszót sikeresen megváltoztattuk',
         'social'            => [
-            'error'     => 'Ehhez a fiókhoz már Kanka bejelentkezést használsz.',
-            'helper'    => 'A fiókodat jelenleg a(z) :provider kezeli. Hagyományos Kanka bejelentkezésre válthatsz egy jelszó megadásával.',
-            'success'   => 'A fiókod mostantól a Kanka bejelentkezést használja.',
-            'title'     => 'Közösségiről Kanka',
+            'error'     => 'Ehhez a fiókhoz már ' . config('app.name') . ' bejelentkezést használsz.',
+            'helper'    => 'A fiókodat jelenleg a(z) :provider kezeli. Hagyományos ' . config('app.name') . ' bejelentkezésre válthatsz egy jelszó megadásával.',
+            'success'   => 'A fiókod mostantól a ' . config('app.name') . ' bejelentkezést használja.',
+            'title'     => 'Közösségiről ' . config('app.name'),
         ],
         'title'             => 'Fiók',
     ],
     'api'       => [
         'description'           => 'API beállítások frissítése',
-        'experimental'          => 'Üdvözlünk a Kanka APIkban! Ezek a funkciók még kísérleti állapotban vannak, de elég stabilak kell, hogy legyenek ahhoz, hogy elkezdhess kommunikálni a Kanka APIval. Hozz létre egy Személyes Hozzáférés Tokent, amit az api hívásaidban használhatsz, vagy használd a Kliens Tokent, ha azt szeretnéd, hogy az alkalmazásod hozzáférjen a felhasználó adataihoz.',
-        'help'                  => 'A Kanka rövidesen egy teljes REST API-t fog biztosítani, hogy harmadik féltől származó alkalmazások tudjanak csatlakozni hozzá. Az API kulcsok kezelésének részleteiről rövidesen itt olvashatsz.',
+        'experimental'          => 'Üdvözlünk a ' . config('app.name') . ' APIkban! Ezek a funkciók még kísérleti állapotban vannak, de elég stabilak kell, hogy legyenek ahhoz, hogy elkezdhess kommunikálni a ' . config('app.name') . ' APIval. Hozz létre egy Személyes Hozzáférés Tokent, amit az api hívásaidban használhatsz, vagy használd a Kliens Tokent, ha azt szeretnéd, hogy az alkalmazásod hozzáférjen a felhasználó adataihoz.',
+        'help'                  => 'A ' . config('app.name') . ' rövidesen egy teljes REST API-t fog biztosítani, hogy harmadik féltől származó alkalmazások tudjanak csatlakozni hozzá. Az API kulcsok kezelésének részleteiről rövidesen itt olvashatsz.',
         'link'                  => 'Olvasd el az API dokumentációt',
         'request_permission'    => 'Jelenleg is dolgozunk egy REST API-n amivel harmadik féltől származó alkalmazások is csatlakozhatnak a Kankához, azonban amíg az utolsó simításokat végezzük rajta, addig korlátozzuk a hozzáférések számát. Ha szeretnél hozzáférni az APIhoz és király alkalmazásokat fejleszteni, amelyek a Kankával kommunikálnak, kérjük, hogy lépj kapcsolatba velünk, és elküldünk minden információt, amire szükséged lehet.',
         'title'                 => 'API',

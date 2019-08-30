@@ -2,7 +2,7 @@
 
 return [
     'about'         => [
-        'description'   => 'Kanka nasceu do desejo de dois jogadores apaixonados por RPG de criar e gerenciar um mundo juntos no ano de 2017. Depois de tentarem algumas opções da época, e concluindo que nenhuma delas funcionou do jeito que queriam, nos resolvemos criar nossa própria ferramenta no final de 2017.',
+        'description'   => config('app.name') . ' nasceu do desejo de dois jogadores apaixonados por RPG de criar e gerenciar um mundo juntos no ano de 2017. Depois de tentarem algumas opções da época, e concluindo que nenhuma delas funcionou do jeito que queriam, nos resolvemos criar nossa própria ferramenta no final de 2017.',
         'title'         => 'Sobre',
     ],
     'contact'       => [
@@ -37,7 +37,7 @@ return [
         'title'         => 'Uma nova maneira de acompanhar suas campanhas.',
     ],
     'footer'        => [
-        'copyright' => '© 2017 - :current kanka.io. Todos direitos reservados.',
+        'copyright' => '© 2017 - :current ' . config('app.site_name') . '. Todos direitos reservados.',
     ],
     'help'          => [
         'description'   => 'Nós estamos aqui caso necessite um pouco de ajuda. Nos contate utilizando um dos seguintes métodos e nós retornaremos o mais rápido possível.',
@@ -48,8 +48,8 @@ return [
     ],
     'master'        => [
         'call_to_action'    => 'Registre-se agora, é gratuito!',
-        'description'       => 'Kanka é uma ferramenta fácil e flexível para criar o seu mundo e gerenciar online sua campanha de RPG. Crie e organize povos, lugares, organizações, eventos e muito mais.',
-        'title'             => 'Kanka',
+        'description'       => config('app.name') . ' é uma ferramenta fácil e flexível para criar o seu mundo e gerenciar online sua campanha de RPG. Crie e organize povos, lugares, organizações, eventos e muito mais.',
+        'title'             => '' . config('app.name'),
     ],
     'menu'          => [
         'about'         => 'Sobre',
@@ -66,11 +66,11 @@ return [
         'tos'           => 'Termos de Serviço',
     ],
     'meta'          => [
-        'description'   => 'Kanka é um criador flexível de mundos digitais e gerenciador online de campanhas de rpg',
-        'title'         => 'Kanka - Gerenciador online de campanhas de RPG e ferramenta de criação de mundos',
+        'description'   => config('app.name') . ' é um criador flexível de mundos digitais e gerenciador online de campanhas de rpg',
+        'title'         => config('app.name') . ' - Gerenciador online de campanhas de RPG e ferramenta de criação de mundos',
     ],
     'release'       => [
-        'description'   => 'Kanka está constantemente crescendo e melhorando, e nós queremos que o mundo saiba todas as coisas incríveis que estamos adicionando ao app.',
+        'description'   => config('app.name') . ' está constantemente crescendo e melhorando, e nós queremos que o mundo saiba todas as coisas incríveis que estamos adicionando ao app.',
         'title'         => 'Atualizações',
     ],
     'second_block'  => [

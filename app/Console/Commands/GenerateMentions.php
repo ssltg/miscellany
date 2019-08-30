@@ -63,7 +63,7 @@ class GenerateMentions extends Command
             'App\Models\Tag',
         ];
 
-        $this->url = "https://kanka.io"; // console doesn't properly read ENV on cloudways
+        $this->url = config('app.url');
 
         foreach ($entities as $entity) {
             $model = new $entity;
@@ -99,18 +99,36 @@ class GenerateMentions extends Command
         foreach ($fields as $field) {
             if (array_has($attributes, $field)) {
                 if (strpos($model->$field, self::REDIRECT_WHAT) !== false) {
-                    // Fix http to https & www to direct
+                    // Fix urls
+                    print_r(preg_match_all(
+                        '@http?:\/\/.*\..*\/' . self::REDIRECT_WHAT . '@im',
+                        $model->$field
+                    ));
+
+                    $model->$field = preg_replace(
+                        [
+                            '@"/redirect\?what@im',
+                            '@http?://.*\..*/' . self::REDIRECT_WHAT . '@im'
+                        ],
+                        [
+                            '"'.$this->url.'/'.config('app.locale').'/' . $this->campaignLink . self::REDIRECT_WHAT,
+                            $this->url.'/'.config('app.locale').'/' . $this->campaignLink . self::REDIRECT_WHAT,
+                        ],
+                        $model->$field
+                    );
+                    print_r($model->$field);
+                    /*
                     $model->$field = str_replace(
                         [
                             '"/redirect?what',
                             'https://kanka.io' . self::REDIRECT_WHAT
                         ],
                         [
-                            '"https://kanka.io/en/' . $this->campaignLink . self::REDIRECT_WHAT,
-                            'https://kanka.io/en/' . $this->campaignLink . self::REDIRECT_WHAT,
+                            '"'.$this->url.'/'.config('app.locale').'/' . $this->campaignLink . self::REDIRECT_WHAT,
+                            $this->url.'/'.config('app.locale').'/' . $this->campaignLink . self::REDIRECT_WHAT,
                         ],
                         $model->$field
-                    );
+                    );*/
 
                     if ($model->isDirty($field)) {
                         $updated = true;

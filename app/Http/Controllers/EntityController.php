@@ -95,7 +95,7 @@ class EntityController extends Controller
 
         return $pdf
             ->loadView('cruds.export', compact('entity', 'name', 'entities', 'exporting'))
-            ->download('kanka ' . strip_tags($realEntity->name) . ' export.pdf');
+            ->download(config('app.name') . ' ' . strip_tags($realEntity->name) . ' export.pdf');
     }
 
     /**

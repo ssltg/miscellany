@@ -37,7 +37,7 @@
                             <i class="fab fa-reddit"></i>
                             <h3>Reddit</h3>
                             <p class="text-muted">{{ trans('front.community.reddit') }}</p>
-                            <p class="text-muted"><a href="https://reddit.com/r/kanka">{{ trans('front.community.join') }}</a></p>
+                            <p class="text-muted"><a href="{{config('services.reddit.account.url')}}">{{ trans('front.community.join') }}</a></p>
                         </div>
                     </div>
                 </div>

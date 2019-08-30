@@ -107,7 +107,7 @@ return [
         'is_recurring'  => 'Si un evento es recurrente, reaparecerá cada año en la misma fecha.',
         'months'        => 'Tu calendario debe tener al menos 2 meses.',
         'moons'         => 'Si añades lunas, aparecerán en el calendario cada luna llena.',
-        'seasons'       => 'Crea estaciones en tu calendario estableciendo cuándo empieza cada una. Kanka se encargará del resto.',
+        'seasons'       => 'Crea estaciones en tu calendario estableciendo cuándo empieza cada una. ' . config('app.name') . ' se encargará del resto.',
         'weekdays'      => 'Escribe los nombres de los días de la semana. Se requiere un mínimo de 2 días.',
         'years'         => 'Algunos años son tan importantes que tienen su propio nombre.',
     ],

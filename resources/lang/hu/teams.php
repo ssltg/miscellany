@@ -3,7 +3,7 @@
 return [
     'index'     => [
         'core'          => 'Fejlesztők',
-        'description'   => 'Ők teszik lehetővé, hogy a Kanka működjön',
+        'description'   => 'Ők teszik lehetővé, hogy a ' . config('app.name') . ' működjön',
         'other'         => 'Egyéb',
         'qa'            => 'Minőségbiztosítás',
         'title'         => 'A csapat',

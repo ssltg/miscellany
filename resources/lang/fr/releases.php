@@ -2,7 +2,7 @@
 
 return [
     'index' => [
-        'description'   => 'Les dernières annonces de Kanka',
+        'description'   => 'Les dernières annonces de ' . config('app.name'),
         'title'         => 'Annonces',
     ],
     'post'  => [

@@ -2,7 +2,7 @@
 
 return [
     'index' => [
-        'description'   => 'A kanka.io legújabb frissítései',
+        'description'   => 'A ' . config('app.site_name') . ' legújabb frissítései',
         'title'         => 'Verziók',
     ],
     'post'  => [

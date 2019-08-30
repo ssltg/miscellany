@@ -103,17 +103,17 @@
             <h2>{!! trans('front.contact.title', ['icon' => '<i class="fa fa-heart"></i>']) !!}</h2>
             <ul class="list-inline list-social">
                 <li class="list-inline-item social-google-plus">
-                    <a href="https://reddit.com/r/kanka" title="Reddit" rel="noreferrer" target="_blank">
+                    <a href="{{config('services.reddit.account.url')}}" title="Reddit" rel="noreferrer" target="_blank">
                         <i class="fab fa-reddit"></i>
                     </a>
                 </li>
                 <li class="list-inline-item social-twitter">
-                    <a href="https://twitter.com/kankaio" title="Twitter" rel="noreferrer" target="_blank">
+                    <a href="{{config('services.twitter.account.url')}}" title="Twitter" rel="noreferrer" target="_blank">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li class="list-inline-item social-facebook">
-                    <a href="https://www.facebook.com/kanka.io.ch/" title="Facebook" rel="noreferrer" target="_blank">
+                    <a href="{{config('services.facebook.account.url')}}" title="Facebook" rel="noreferrer" target="_blank">
                         <i class="fab fa-facebook"></i>
                     </a>
                 </li>

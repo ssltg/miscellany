@@ -36,7 +36,7 @@ return [
             'limit' => 'Du hast dein Limit von einem Export pro Tag erreicht. Bitte versuche es morgen wieder.',
         ],
         'helper'        => 'Exportiere deine Kampagne. Eine Benachrichtigung mit dem Downloadlink wir dir bereit gestellt.',
-        'success'       => 'Der Export deiner Kampagne wird vorbereitet. Du erhältst eine Nachricht in Kanka sobald dein Download bereit steht.',
+        'success'       => 'Der Export deiner Kampagne wird vorbereitet. Du erhältst eine Nachricht in ' . config('app.name') . ' sobald dein Download bereit steht.',
         'title'         => 'Kampagne :name Export',
     ],
     'fields'                            => [
@@ -89,7 +89,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Trete :name\'s Kampagne bei</a>',
-            'subject'   => ':name hat dich eingeladen, seiner Kampagne \':campaign\' auf kanka.io beizutreten! Nutze den folgenden Link, um die Einladung anzunehmen.',
+            'subject'   => ':name hat dich eingeladen, seiner Kampagne \':campaign\' auf ' . config('app.site_name') . ' beizutreten! Nutze den folgenden Link, um die Einladung anzunehmen.',
             'title'     => 'Einladung von :name',
         ],
         'error'         => [
@@ -145,11 +145,8 @@ return [
             'switch'    => 'Zu diesem User wechseln',
         ],
         'impersonating'         => [
-            'message'   => <<<'TEXT'
-Du siehst die Kampagne jetzt als ein anderer User.
-Einige Funktionen wurden deaktiviert, aber ansonsten sieht es genau so aus wie es der User sehen würde. Um zurück zu deinem User zu wechseln, benutze den "Zurück zu meinem User" Button, wo sonst der Logout Button zu finden ist.
-TEXT
-,
+            'message'   => "Du siehst die Kampagne jetzt als ein anderer User.
+Einige Funktionen wurden deaktiviert, aber ansonsten sieht es genau so aus wie es der User sehen würde. Um zurück zu deinem User zu wechseln, benutze den \"Zurück zu meinem User\" Button, wo sonst der Logout Button zu finden ist.",
             'title'     => 'Ansicht von :name',
         ],
         'invite'                => [
@@ -257,7 +254,7 @@ TEXT
             'calendars'     => 'Der Ort, um die Kalender deiner Welt zu erstellen.',
             'characters'    => 'Die Leute, die deine Welt bevölkern.',
             'conversations' => 'Fiktive Gespräche zwischen Charakteren oder zwischen Kampagnennutzern.',
-            'dice_rolls'    => 'Für die, die Kanka für RPG Kampagnen benutzen, eine Möglichkeit Würfelwürfe zu verwalten.',
+            'dice_rolls'    => 'Für die, die ' . config('app.name') . ' für RPG Kampagnen benutzen, eine Möglichkeit Würfelwürfe zu verwalten.',
             'events'        => 'Feiertage, Festlichkeiten, Katastrophen, Geburtstage, Kriege.',
             'families'      => 'Klans oder Familien, deren Beziehungen und deren Mitglieder.',
             'items'         => 'Waffen, Fahrzeuge, Reliquien, Tränke.',

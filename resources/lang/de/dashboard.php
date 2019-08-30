@@ -52,8 +52,7 @@ return [
     ],
     'title'             => 'Dashboard',
     'welcome'           => [
-        'body'      => <<<'TEXT'
-Willkommen bei Kanka! Deine erste Kampagne wurde erstellt und wir haben zur Inspiration ein paar Beispielobjekte mit angelegt (kannst du jederzeit löschen).
+        'body'      => "Willkommen bei " . config('app.name') . "! Deine erste Kampagne wurde erstellt und wir haben zur Inspiration ein paar Beispielobjekte mit angelegt (kannst du jederzeit löschen).
 
 Du willst wahrscheinlich mit ein paar eigenen Objekten starten, also such dir links eine Kategorie aus und leg los. Kategorien, die du nicht brauchst lassen sich in den Kampagnen Einstellungen ausblenden.
 
@@ -62,7 +61,7 @@ Ein paar Tipps für den Anfang:
 - Du kannst Konto Einstellungen wie Design und Objekte pro Seite in deinem Profil oben rechts anpassen.
 - Es gibt eine wachsende Anzahl an Tutorials auf :youtube. Unter anderem über Attribute und wie man die eigene Kampagne mit anderen teilt. Der :faq ist vielleicht auch hilfreich.
 - Wenn du Fragen oder Vorschläge hast - oder einfach nur plaudern willst -, dann schau vorbei auf unserem :discord.
-TEXT
+"
 ,
         'header'    => 'Willkommen',
     ],

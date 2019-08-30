@@ -3,14 +3,14 @@
 return [
     'index'     => [
         'core'          => 'Core',
-        'description'   => 'Queste persone hanno reso Kanka possibile',
+        'description'   => 'Queste persone hanno reso ' . config('app.name') . ' possibile',
         'other'         => 'Altro',
         'qa'            => 'Quality Assurance',
         'title'         => 'Team',
         'translations'  => 'Traduzioni',
     ],
     'patreon'   => [
-        'description'   => 'Queste fantastiche persone che hanno aiutato e supportato Kanka su Patreon.',
+        'description'   => 'Queste fantastiche persone che hanno aiutato e supportato ' . config('app.name') . ' su Patreon.',
         'title'         => 'Patreon',
     ],
 ];

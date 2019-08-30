@@ -2,11 +2,11 @@
 
 return [
     'about'         => [
-        'description'   => 'Kanka è nato dal desiderio di due appassionati giocatori di RPG per costruire e gestire un mondo assieme nell\'estate del 2017. Dopo aver provato qualcosa di già disponibile a quel tempo, ed aver concluso che nessuna di esse soddisfacesse le nostre aspettative, abbiamo iniziato a costruire il nostro sistema nell\'autunno del 2017.',
+        'description'   => config('app.name') . ' è nato dal desiderio di due appassionati giocatori di RPG per costruire e gestire un mondo assieme nell\'estate del 2017. Dopo aver provato qualcosa di già disponibile a quel tempo, ed aver concluso che nessuna di esse soddisfacesse le nostre aspettative, abbiamo iniziato a costruire il nostro sistema nell\'autunno del 2017.',
         'title'         => 'Su di noi',
     ],
     'campaigns'     => [
-        'description_full'  => 'Molte campagne su Kanka sono pubbliche per essere guardate da tutti. Questa pagina contiene una lista di tutte le campagne pubbliche ed alcune campagne in primo piano dalla comunità.',
+        'description_full'  => 'Molte campagne su ' . config('app.name') . ' sono pubbliche per essere guardate da tutti. Questa pagina contiene una lista di tutte le campagne pubbliche ed alcune campagne in primo piano dalla comunità.',
         'featured'          => [
             'description'   => 'La nostra comunità realizza cose fantastiche che noi amiamo mostrare come Campagne in Primo Piano. Cambiamo questa lista di frequente quindi cerca di tornare di quando in quando per altre campagne da osservare.',
             'title'         => 'Campagne in Primo Piano',
@@ -18,10 +18,10 @@ return [
         'title'             => 'Campagne Pubbliche',
     ],
     'community'     => [
-        'description'   => 'Kanka non è solamente un\'app è anche una fiorente comunità di costruttori di mondi, dungeon masters, giocatori di ruolo ed appassionati creativi.',
-        'discord'       => 'Il canale Discord di Kanka è il luogo più attivo per parlare dell\'app, dei bug, delle caratteristiche e per chiedere aiuto o darne.',
+        'description'   => config('app.name') . ' non è solamente un\'app è anche una fiorente comunità di costruttori di mondi, dungeon masters, giocatori di ruolo ed appassionati creativi.',
+        'discord'       => 'Il canale Discord di ' . config('app.name') . ' è il luogo più attivo per parlare dell\'app, dei bug, delle caratteristiche e per chiedere aiuto o darne.',
         'join'          => 'Unisciti a noi!',
-        'reddit'        => 'Il subreddit di kanka è un posto più tranquillo dove le cose possono essere discusse per un periodo più lungo.',
+        'reddit'        => 'Il subreddit di ' . config('app.name') . ' è un posto più tranquillo dove le cose possono essere discusse per un periodo più lungo.',
         'title'         => 'Comunità',
     ],
     'contact'       => [
@@ -38,7 +38,7 @@ return [
     ],
     'features'      => [
         'api'               => [
-            'description'   => 'Vuoi realizzare un fantastico strumento che si integra con Kanka? Sequi questo link :link.',
+            'description'   => 'Vuoi realizzare un fantastico strumento che si integra con ' . config('app.name') . '? Sequi questo link :link.',
             'link'          => 'API docs',
             'title'         => 'API',
         ],
@@ -60,7 +60,7 @@ return [
             'description'   => 'Tieni traccia dei personaggi, delle loro famiglie, dei luoghi visitati e molto altro in qualsiasi momento.',
             'title'         => 'Personaggi, Famiglie, Luoghi',
         ],
-        'learn_more'        => 'Scopri di più sulle caratteristiche di Kanka.',
+        'learn_more'        => 'Scopri di più sulle caratteristiche di ' . config('app.name') . '.',
         'maps'              => [
             'description'   => 'Carica le mappe dei tuoi mondi, delle città e delle caverne aggiungendogli utili marcatori e collegamenti.',
             'title'         => 'Mappe',
@@ -83,7 +83,7 @@ return [
         ],
         'title'             => 'Caratteristiche Infinite, Divertimento Infinito',
         'updates'           => [
-            'description'   => 'Kanka viene aggiornata frequentemente con updates che sono presentati dalla community.',
+            'description'   => config('app.name') . ' viene aggiornata frequentemente con updates che sono presentati dalla community.',
             'title'         => 'Aggiornamenti Frequenti',
         ],
     ],
@@ -93,7 +93,7 @@ return [
     ],
     'footer'        => [
         'app'       => 'App',
-        'copyright' => '© 2017 - :current kanka.io. All Rights Reserved.',
+        'copyright' => '© 2017 - :current ' . config('app.site_name') . '. All Rights Reserved.',
         'navigation'=> 'Navigazione',
         'resources' => 'Risorse',
         'social'    => 'Social',
@@ -107,8 +107,8 @@ return [
     ],
     'master'        => [
         'call_to_action'    => 'Registrati adesso, è gratuito!',
-        'description'       => 'Kanka è uno strumento facile e flessibile per costruire mondi e gestire le tue campagne RPG online. Creare ed organizzare persone, luoghi, organizzazioni, eventi and molto altro.',
-        'title'             => 'Kanka',
+        'description'       => config('app.name') . ' è uno strumento facile e flessibile per costruire mondi e gestire le tue campagne RPG online. Creare ed organizzare persone, luoghi, organizzazioni, eventi and molto altro.',
+        'title'             => '' . config('app.name'),
     ],
     'menu'          => [
         'about'     => 'Su di noi',
@@ -131,15 +131,15 @@ return [
         'tos'       => 'Termini di Servizio',
     ],
     'meta'          => [
-        'description'   => 'Kanka è un flessibile costruttore di mondi digitali e gestore on-line di campagne RPG',
-        'title'         => 'Kanka - Gestore di campagne Online per RPG e strumento per la creazione di mondi',
+        'description'   => config('app.name') . ' è un flessibile costruttore di mondi digitali e gestore on-line di campagne RPG',
+        'title'         => config('app.name') . ' - Gestore di campagne Online per RPG e strumento per la creazione di mondi',
     ],
     'privacy'       => [
         'description'   => 'Data di entrata in vigore: 25 Maggio 2018',
         'title'         => 'Privacy Policy',
     ],
     'release'       => [
-        'description'   => 'Kanka cresce e migliora costantemente è vogliamo che il mondo conosca tutte le magnifiche cose che stiamo aggiungendo all\'app.',
+        'description'   => config('app.name') . ' cresce e migliora costantemente è vogliamo che il mondo conosca tutte le magnifiche cose che stiamo aggiungendo all\'app.',
         'title'         => 'Rilasci',
     ],
     'roadmap'       => [

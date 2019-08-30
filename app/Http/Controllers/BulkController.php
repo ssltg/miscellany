@@ -46,7 +46,7 @@ class BulkController extends Controller
             $name = $entity;
             return $pdf
                 ->loadView('cruds.export', compact('entity', 'entities', 'name'))
-                ->download('kanka ' . $entity . ' export.pdf');
+                ->download(config('app.name') . ' ' . $entity . ' export.pdf');
         } elseif ($request->has('private')) {
             $count = $this->bulkService->makePrivate();
             return redirect()->route($entity . '.' . $subroute)

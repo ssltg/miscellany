@@ -20,9 +20,9 @@ return [
     'register'  => [
         'already_account'           => 'Já possui uma conta?',
         'email'                     => [
-            'body'  => '<p>Bem Vindo ao kanka.io!</p><p>Sua conta foi criada utilizando o seu email.</p>',
+            'body'  => '<p>Bem Vindo ao ' . config('app.site_name') . '!</p><p>Sua conta foi criada utilizando o seu email.</p>',
             'login' => 'Entrar',
-            'title' => 'Bem vindo ao kanka.io!',
+            'title' => 'Bem vindo ao ' . config('app.site_name') . '!',
         ],
         'errors'                    => [
             'email_already_taken'   => 'Já há uma conta registrada com esse email.',

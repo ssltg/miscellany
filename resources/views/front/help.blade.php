@@ -29,7 +29,7 @@
                         <div class="feature-item">
                             <i class="fab fa-twitter"></i>
                             <h3>{{ trans('front.help.twitter') }}</h3>
-                            <p class="text-muted"><a href="//twitter.com/kankaio">@kankaio</a></p>
+                            <p class="text-muted"><a href="{{config('services.twitter.account.url')}}">{{config('services.twitter.account.name')}}</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 my-auto">
@@ -43,7 +43,7 @@
                         <div class="feature-item">
                             <i class="fa fa-envelope-open"></i>
                             <h3>{{ trans('front.help.email') }}</h3>
-                            <p class="text-muted"><a href="mailto:hello@kanka.io">hello@kanka.io</a></p>
+                            <p class="text-muted"><a href="mailto:{{config('mail.contact.address')}}">{{config('mail.contact.name')}}</a></p>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,7 @@ return [
             'limit' => 'Hai superato il tuo massimo di un\'esportazione al giorno. Per favore riprova domani.',
         ],
         'helper'        => 'Esporta la tua campagna. Riceverai una notifica con il link per il download appena disponibile.',
-        'success'       => 'L\'esportazione della tua campagna sta venendo preparata. Riceverai una notifica su Kanka con il link ad uno zip scaricabile non appena sarà pronto.',
+        'success'       => 'L\'esportazione della tua campagna sta venendo preparata. Riceverai una notifica su ' . config('app.name') . ' con il link ad uno zip scaricabile non appena sarà pronto.',
         'title'         => 'Esportazione della Campagna :name',
     ],
     'fields'                            => [
@@ -91,7 +91,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Unisciti alla campagna di :name</a>',
-            'subject'   => ':name ti ha invitato ad unirti alla sua campagna \':campaign\' su kanka.io! Usa il seguente link per accettare il suo invito.',
+            'subject'   => ':name ti ha invitato ad unirti alla sua campagna \':campaign\' su ' . config('app.site_name') . '! Usa il seguente link per accettare il suo invito.',
             'title'     => 'Invito da parte di :name',
         ],
         'error'         => [
@@ -259,7 +259,7 @@ return [
             'calendars'     => 'Un\'area dove definire i calendario del tuo mondo.',
             'characters'    => 'Le persone che abitano il tuo mondo.',
             'conversations' => 'Conversazioni fittizie tra i personaggi o gli utenti della campagna.',
-            'dice_rolls'    => 'Per quelli che utilizzano Kanka per una campagna RPG, un modo per gestire i tiri di dado.',
+            'dice_rolls'    => 'Per quelli che utilizzano ' . config('app.name') . ' per una campagna RPG, un modo per gestire i tiri di dado.',
             'events'        => 'Vacanza, festival, disastri, compleanni, guerre.',
             'families'      => 'Clan o famiglie, le loro relazioni ed io loro membri.',
             'items'         => 'Armi, veicoli, reliquie, pozioni.',

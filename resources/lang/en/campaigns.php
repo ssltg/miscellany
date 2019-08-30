@@ -36,7 +36,7 @@ return [
             'limit' => 'You have exceeded your maximum of one exports per day. Please try again tomorrow.',
         ],
         'helper'        => 'Export your campaign. A notification with a download link will be made available.',
-        'success'       => 'Your campaign export is being prepared. You\'ll receive a notification in Kanka to a downloadable zip as soon as it\'s ready.',
+        'success'       => 'Your campaign export is being prepared. You\'ll receive a notification in ' . config('app.name') . ' to a downloadable zip as soon as it\'s ready.',
         'title'         => 'Campaign :name Export',
     ],
     'fields'                            => [
@@ -61,7 +61,7 @@ return [
         'excerpt'                       => 'The campaign excerpt will be displayed on the dashboard, so write a few sentences introducing your world. Keep it short for the best results.',
         'locale'                        => 'The language your campaign is written in. This is used for generating content and grouping public campaigns.',
         'name'                          => 'Your campaign/world can have any name as long as it contains at least 4 letters or numbers.',
-        'systems'                       => 'To avoid cluttering users with options, some features of Kanka are only available with specific RPG systems (ie the D&D 5e monster stat block). Adding supported systems here will enable those features.',
+        'systems'                       => 'To avoid cluttering users with options, some features of ' . config('app.name') . ' are only available with specific RPG systems (ie the D&D 5e monster stat block). Adding supported systems here will enable those features.',
         'system'                        => 'If your campaign is publicly visible, the system is shown in the :link page.',
         'visibility'                    => 'Making a campaign public will mean anyone with a link to it will be able to see it.',
     ],
@@ -95,7 +95,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Join :name\'s campaign</a>',
-            'subject'   => ':name has invited you to join their campaign \':campaign\' on kanka.io! Use the following link to accept their invitation.',
+            'subject'   => ':name has invited you to join their campaign \':campaign\' on ' . config('app.site_name') . '! Use the following link to accept their invitation.',
             'title'     => 'Invitation from :name',
         ],
         'error'         => [
@@ -267,7 +267,7 @@ return [
             'calendars'     => 'A place to define the calendars of your world.',
             'characters'    => 'The people who inhabit your world.',
             'conversations' => 'Fictional conversations between characters or between campaign users.',
-            'dice_rolls'    => 'For those who use Kanka for RPG campaigns, a way to handle dice rolls.',
+            'dice_rolls'    => 'For those who use ' . config('app.name') . ' for RPG campaigns, a way to handle dice rolls.',
             'events'        => 'Holidays, festivals, disasters, birthdays, wars.',
             'families'      => 'Clans or families, their relations and their members.',
             'items'         => 'Weapons, vehicles, relics, potions.',

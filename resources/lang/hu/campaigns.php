@@ -89,7 +89,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Csatlakozás :name kampányhoz</a>',
-            'subject'   => ':name meghívott, hogy csatlakozz a \':campaign\' nevű kampányához a kanka.io oldalon! Használd az alábbi linket a csatlakozkáshoz!',
+            'subject'   => ':name meghívott, hogy csatlakozz a \':campaign\' nevű kampányához a ' . config('app.site_name') . ' oldalon! Használd az alábbi linket a csatlakozkáshoz!',
             'title'     => 'Meghívó :name nevű felhasználótól',
         ],
         'error'         => [

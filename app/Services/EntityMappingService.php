@@ -303,7 +303,7 @@ class EntityMappingService
         foreach ($segments[1] as $key => $url) {
             // If it's an internal link, we want to "map" id
             $domain = parse_url($url, PHP_URL_HOST);
-            if (!in_array($domain, ['kanka.io', 'kanka.loc', 'dev.kanka.io'])) {
+            if (!in_array($domain, config('app.internal_domains'))) {
                 continue;
             }
 

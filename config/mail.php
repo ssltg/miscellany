@@ -53,11 +53,37 @@ return [
     | the same address. Here, you may specify a name and address that is
     | used globally for all e-mails that are sent by your application.
     |
+    |--------------------------------------------------------------------------
+    | Global Contact Email Address
+    |--------------------------------------------------------------------------
+    |
+    | You may wish for all e-mails sent to you to be sent to
+    | the same address. Here, you may specify a name and address that is
+    | used globally for all contact e-mails that are presented by your application.
+    |
+    |--------------------------------------------------------------------------
+    | Global Delete Info Email Address
+    |--------------------------------------------------------------------------
+    |
+    | You may wish for e-mails for delete info to you to be sent to
+    | the same address. Here, you may specify a name and address that is
+    | used globally for all account deleted e-mails that are send by your application.
+    |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@kanka.io'),
-        'name' => env('MAIL_FROM_NAME', 'Kanka.io'),
+    'address' => [
+        'from' => [
+            'address' => env('MAIL_FROM_ADDRESS', 'no-reply@kanka.io'),
+            'name' => env('MAIL_FROM_NAME', 'Kanka Support'),
+        ],
+        'delete' => [
+            'address' => env('MAIL_FROM_DELETED_ADDRESS', 'hello+deleted@kanka.io'),
+            'name' => env('MAIL_FROM_DELETED_NAME', 'Kanka.io'),
+        ],
+        'contact' => [
+            'address' => env('MAIL_CONTACT_ADDRESS', 'hello@kanka.io'),
+            'name' => env('MAIL_CONTACT_NAME', 'hello@kanka.io'),
+        ],
     ],
 
     /*

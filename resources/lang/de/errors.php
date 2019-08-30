@@ -18,10 +18,10 @@ return [
     ],
     '503'       => [
         'body'  => [
-            '1' => 'Kanka ist aktuell in Wartung, was normalerweise bedeutet, dass ein Update eingespielt wird!',
+            '1' => config('app.name') . ' ist aktuell in Wartung, was normalerweise bedeutet, dass ein Update eingespielt wird!',
             '2' => 'Entschuldige die Unannehmlichkeiten. Alles wird bald wieder normal funktionieren.',
         ],
         'title' => 'Wartung',
     ],
-    'footer'    => 'Wenn du weitere Hilfe brauchst, bitte kontaktiere uns über hello@kanka.io oder über :discord.',
+    'footer'    => 'Wenn du weitere Hilfe brauchst, bitte kontaktiere uns über ' . config('mail.address.contact.address') . ' oder über :discord.',
 ];

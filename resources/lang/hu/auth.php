@@ -34,9 +34,9 @@ return [
     'register'  => [
         'already_account'           => 'Már van felhasználói fiókod?',
         'email'                     => [
-            'body'  => '<p>Üdvözöl a  kanka.io!</p><p>Az email-címedhez tartozó fiókodat létrehoztuk.</p>',
+            'body'  => '<p>Üdvözöl a  ' . config('app.site_name') . '!</p><p>Az email-címedhez tartozó fiókodat létrehoztuk.</p>',
             'login' => 'Jelentkezz be',
-            'title' => 'Üdvözöl a kanka.io!',
+            'title' => 'Üdvözöl a ' . config('app.site_name') . '!',
         ],
         'errors'                    => [
             'email_already_taken'   => 'Ehhez az email-hez már regisztráltak felhasználói fiókot.',

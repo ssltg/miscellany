@@ -36,6 +36,9 @@ return [
     ],
 
     'facebook' => [
+        'account' => [
+            'url' => env('FACEBOOK_ACCOUNT_URL', '//www.facebook.com/kanka.io.ch')
+        ],
         'client_id' => env('FACEBOOK_CLIENT_ID'),
         'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
         'redirect' => env('APP_URL') . '/auth/facebook/callback',
@@ -48,8 +51,30 @@ return [
     ],
 
     'twitter' => [
+        'account' => [
+            'url' => env('TWITTER_ACCOUNT_URL', '//twitter.com/kankaio'),
+            'name' => env('TWITTER_ACCOUNT_NAME', '@kankaio')
+            ],
         'client_id' => env('TWITTER_CLIENT_ID'),
         'client_secret' => env('TWITTER_CLIENT_SECRET'),
         'redirect' => env('APP_URL') . '/auth/twitter/callback',
+    ],
+
+    'reddit' => [
+        'account' => [
+            'url' => env('REDDIT_ACCOUNT_URL', 'https://reddit.com/r/kanka')
+        ],
+    ],
+
+    'trello' => [
+        'account' => [
+            'roadmap' => [
+                'url' => env('TRELLO_ACCOUNT_ROADMAP_URL', 'https://trello.com/b/62aOwCHU/kanka')
+            ],
+            'backlog' => [
+                'url' => env('TRELLO_ACCOUNT_BACKLOG_URL', 'https://trello.com/b/hVjPfOMU/kanka-backlog')
+            ],
+        ],
+
     ],
 ];

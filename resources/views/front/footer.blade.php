@@ -3,7 +3,7 @@
         <div class="row h-100 footer-links">
             <div class="col-md-3 col-sm-4 col-xs-6">
                 <p class="first">
-                    <i class="fa fa-envelope hidden-xs"></i> hello@kanka.io
+                    <i class="fa fa-envelope hidden-xs"></i> {{config('mail.contact.address')}}
                 </p>
                 <p>{!! __('footer.copyright', ['year' => date('Y')]) !!}</p>
             </div>
@@ -64,13 +64,13 @@
                         <a href="{{ config('discord.url') }}" target="discord" title="Discord" rel="noreferrer"><i class="fab fa-discord"></i></a>
                     </li>
                     <li>
-                        <a href="//reddit.com/r/kanka" target="reddit" title="Reddit" rel="noreferrer"><i class="fab fa-reddit"></i></a>
+                        <a href="{{config('services.reddit.account.url')}}" target="reddit" title="Reddit" rel="noreferrer"><i class="fab fa-reddit"></i></a>
                     </li>
                     <li>
-                        <a href="//www.facebook.com/kanka.io.ch" target="facebook" title="Facebook" rel="noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="{{config('services.facebook.account.url')}}" target="facebook" title="Facebook" rel="noreferrer"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="//twitter.com/kankaio" target="twitter" title="Twitter" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="{{config('services.twitter.account.url')}}" target="twitter" title="Twitter" rel="noreferrer"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
             </div>

@@ -56,7 +56,7 @@ return [
         ],
         'email'         => [
             'link'      => '<a href=":link">Juntar-se a campanha de :name\'s </a>',
-            'subject'   => ':name convidou você para juntar-se a sua campanha \':campaign\' no kanka.io! Use o link a seguir para aceitar o seu convite.',
+            'subject'   => ':name convidou você para juntar-se a sua campanha \':campaign\' no ' . config('app.site_name') . '! Use o link a seguir para aceitar o seu convite.',
             'title'     => 'Convite de :name',
         ],
         'error'         => [
@@ -190,7 +190,7 @@ return [
             'calendars'     => 'Um lugar para definir todos os calendários do seu mundo.',
             'categories'    => 'Cada entidade pode ter uma categoria. Categorias podem pertencer a outras categorias, e entidades podem ser filtradas por categorias.',
             'characters'    => 'O povo que habita seu mundo.',
-            'dice_rolls'    => 'Para aqueles que usam Kanka para campanhas de RPG, uma maneira de cuidar das rolagens de dados.',
+            'dice_rolls'    => 'Para aqueles que usam ' . config('app.name') . ' para campanhas de RPG, uma maneira de cuidar das rolagens de dados.',
             'events'        => 'Feriados, festivais, desastres, aniversários, guerras.',
             'families'      => 'Clãs ou famílias, suas relações e seus membros.',
             'items'         => 'Armas, veículos, relíquias, poções.',

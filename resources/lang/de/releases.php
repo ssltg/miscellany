@@ -2,7 +2,7 @@
 
 return [
     'index' => [
-        'description'   => 'Die letzten Neuigkeiten zu kanka.io',
+        'description'   => 'Die letzten Neuigkeiten zu ' . config('app.site_name'),
         'title'         => 'Versionen',
     ],
     'post'  => [

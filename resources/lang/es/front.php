@@ -2,11 +2,11 @@
 
 return [
     'about'         => [
-        'description'   => 'Kanka nació por el deseo de dos apasionados jugadores de rol por administrar un mundo juntos durante el verano de 2017. Tras probar varias opciones disponibles en ese momento, y concluir que ninguna de ellas se adecuaba a lo que queríamos, nos pusimos a construir nuestra propia herramienta durante el otoño de 2017.',
+        'description'   => config('app.name') . ' nació por el deseo de dos apasionados jugadores de rol por administrar un mundo juntos durante el verano de 2017. Tras probar varias opciones disponibles en ese momento, y concluir que ninguna de ellas se adecuaba a lo que queríamos, nos pusimos a construir nuestra propia herramienta durante el otoño de 2017.',
         'title'         => 'Acerca de',
     ],
     'campaigns'     => [
-        'description_full'  => 'Muchas de las campañas de Kanka son públicas para que todos las puedan ver. Esta página contiene una lista con todas las campañas públicas, así como algunas campañas destacadas de la comunidad.',
+        'description_full'  => 'Muchas de las campañas de ' . config('app.name') . ' son públicas para que todos las puedan ver. Esta página contiene una lista con todas las campañas públicas, así como algunas campañas destacadas de la comunidad.',
         'featured'          => [
             'description'   => 'Nuestra comunidad construye campañas increíbles que hemos incluido en las Campañas Destacadas. Iremos cambiando esta lista con frecuencia, así que asegúrate de volver de vez en cuando para ver qué novedades hay.',
             'title'         => 'Campañas Destacadas',
@@ -18,10 +18,10 @@ return [
         'title'             => 'Campañas Públicas',
     ],
     'community'     => [
-        'description'   => 'Kanka no es solamente una app: también es una próspera comunidad de creadores de mundos, másters y jugadores de rol y entusiastas creativos.',
-        'discord'       => 'El Discord de Kanka es el lugar más activo para hablar de la app, errores, características, pedir ayuda y echar una mano.',
+        'description'   => config('app.name') . ' no es solamente una app: también es una próspera comunidad de creadores de mundos, másters y jugadores de rol y entusiastas creativos.',
+        'discord'       => 'El Discord de ' . config('app.name') . ' es el lugar más activo para hablar de la app, errores, características, pedir ayuda y echar una mano.',
         'join'          => 'Únete!',
-        'reddit'        => 'El subreddit de Kanka es un lugar más tranquilo donde se puede hablar de las cosas durante un período de tiempo más largo.',
+        'reddit'        => 'El subreddit de ' . config('app.name') . ' es un lugar más tranquilo donde se puede hablar de las cosas durante un período de tiempo más largo.',
         'title'         => 'Comunidad',
     ],
     'contact'       => [
@@ -38,7 +38,7 @@ return [
     ],
     'features'      => [
         'api'               => [
-            'description'   => '¿Quieres crear herramientas que se integren en Kanka? Lo tienes todo en :link',
+            'description'   => '¿Quieres crear herramientas que se integren en ' . config('app.name') . '? Lo tienes todo en :link',
             'link'          => 'Documentación API',
             'title'         => 'API',
         ],
@@ -60,7 +60,7 @@ return [
             'description'   => 'Monitoriza tus personajes, sus familias su situación y mucho más en cualquier momento.',
             'title'         => 'Personajes, Familias, Localizaciones',
         ],
-        'learn_more'        => 'Saber más sobre las funciones de Kanka',
+        'learn_more'        => 'Saber más sobre las funciones de ' . config('app.name'),
         'maps'              => [
             'description'   => 'Sube mapas de tus mundos, ciudades y cuevas, y añádeles prácticos marcadores y enlaces.',
             'title'         => 'Mapas',
@@ -83,7 +83,7 @@ return [
         ],
         'title'             => 'Funciones ilimitadas, diversión ilimitada',
         'updates'           => [
-            'description'   => 'Kanka se actualiza frecuentemente gracias a las aportaciones de la comunidad.',
+            'description'   => config('app.name') . ' se actualiza frecuentemente gracias a las aportaciones de la comunidad.',
             'title'         => 'Actualizaciones frecuentes',
         ],
     ],
@@ -93,7 +93,7 @@ return [
     ],
     'footer'        => [
         'app'       => 'App',
-        'copyright' => '© 2017 - :current kanka.io. Todos los derechos reservados.',
+        'copyright' => '© 2017 - :current ' . config('app.site_name') . '. Todos los derechos reservados.',
         'navigation'=> 'Navegación',
         'resources' => 'Recursos',
         'social'    => 'Social',
@@ -107,8 +107,8 @@ return [
     ],
     'master'        => [
         'call_to_action'    => 'Regístrate ahora, ¡es gratis!',
-        'description'       => 'Kanka es una herramienta fácil y flexible para crear mundos y monitorizar tu campaña RPG en nuestra web. Crea y organiza a tus personajes, lugares, organizaciones, eventos y mucho más.',
-        'title'             => 'Kanka',
+        'description'       => config('app.name') . ' es una herramienta fácil y flexible para crear mundos y monitorizar tu campaña RPG en nuestra web. Crea y organiza a tus personajes, lugares, organizaciones, eventos y mucho más.',
+        'title'             => config('app.name'),
     ],
     'menu'          => [
         'about'     => 'Acerca de',
@@ -131,15 +131,15 @@ return [
         'tos'       => 'Términos de servicio',
     ],
     'meta'          => [
-        'description'   => 'Kanka es un administrador flexible de campañas de rol online.',
-        'title'         => 'Kanka - Gestiona tus sesiones y construye tus mundos.',
+        'description'   => config('app.name') . ' es un administrador flexible de campañas de rol online.',
+        'title'         => config('app.name') . ' - Gestiona tus sesiones y construye tus mundos.',
     ],
     'privacy'       => [
         'description'   => 'Fecha efectiva: 23 de mayo de 2018',
         'title'         => 'Política de Privacidad',
     ],
     'release'       => [
-        'description'   => 'Kanka está creciendo y mejorando constantemente, y queremos que el mundo conozca todas las cosas increíbles que estamos añadiendo a la aplicación.',
+        'description'   => config('app.name') . ' está creciendo y mejorando constantemente, y queremos que el mundo conozca todas las cosas increíbles que estamos añadiendo a la aplicación.',
         'title'         => 'Publicaciones',
     ],
     'roadmap'       => [

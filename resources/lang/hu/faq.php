@@ -2,14 +2,12 @@
 
 return [
     'attribute-templates'   => [
-        'answer'    => <<<'TEXT'
+        'answer'    => "
 A legjobban egy példán keresztül mutathatjuk be. Tegyük fel, hogy a világodban rengeteg helyszín van, és a városoknál szeretnéd a népességet, az éghajlatot és a bűnözési szintet egyedi tulajdonságokban nyilvántartani.
 
 Ezt természetesen egyenként végrehajthatod minden érintett helyszínen, de ez hamar monotonná válhat, és néha előfordulhat az is, hogy elfelejted hozzáadni némelyikhez mondjuk a “Bűnözési szintet”. Itt jönnek képbe a tulajdonságsablonok.
 
-Létrehozhatsz egy tulajdonságsablont ezekkel a tulajdonságokkal (Népesség, Éghajlat, Bűnözési szint), elnevezed mondjuk “Város”-nak, és ezt hozzáadhatod minden városodhoz, amikor elkészíted a bejegyzésüket. Ez létrehozza bennük a megfelelő tulajdonságokat, így neked csak a feltöltésüket kell megcsinálnod, nem kell észben tartanod a létrehozásukat is.
-TEXT
-,
+Létrehozhatsz egy tulajdonságsablont ezekkel a tulajdonságokkal (Népesség, Éghajlat, Bűnözési szint), elnevezed mondjuk “Város”-nak, és ezt hozzáadhatod minden városodhoz, amikor elkészíted a bejegyzésüket. Ez létrehozza bennük a megfelelő tulajdonságokat, így neked csak a feltöltésüket kell megcsinálnod, nem kell észben tartanod a létrehozásukat is.",
         'question'  => 'Mik azok a tulajdonságsablonok?',
     ],
     'fields'                => [
@@ -20,12 +18,9 @@ TEXT
         'question'  => 'Kérdés',
     ],
     'free'                  => [
-        'answer'    => <<<'TEXT'
-Igen! Úgy hisszük, hogy az anyagi helyzeted nem kell, hogy hatással legyen arra, hogy mennyire élvezed a szerepjátékokat vagy a világépítést, így mindig ingyenesen fogjuk tartani az alkalmazást. A nagylelkű Patreonos támogatóinknak köszönhetően fedezhetjük a havi szerverköltségeket, így az alkalmazás ingyenes maradhat!
+        'answer'    => "Igen! Úgy hisszük, hogy az anyagi helyzeted nem kell, hogy hatással legyen arra, hogy mennyire élvezed a szerepjátékokat vagy a világépítést, így mindig ingyenesen fogjuk tartani az alkalmazást. A nagylelkű Patreonos támogatóinknak köszönhetően fedezhetjük a havi szerverköltségeket, így az alkalmazás ingyenes maradhat!
 
-A Patreonos támogatás előnyei: nagyobb fájlokat tölthetsz fel, a neved bekerül a Patreon dicsőségcsarnokunkba, szebb alapértelmezett ikonokat kapsz, szavazhatsz arra, hogy milyen fejlesztések kapjanak prioritást és még sok más.
-TEXT
-,
+A Patreonos támogatás előnyei: nagyobb fájlokat tölthetsz fel, a neved bekerül a Patreon dicsőségcsarnokunkba, szebb alapértelmezett ikonokat kapsz, szavazhatsz arra, hogy milyen fejlesztések kapjanak prioritást és még sok más.",
         'question'  => 'Később is ingyenesek maradtok?',
     ],
     'help'                  => [

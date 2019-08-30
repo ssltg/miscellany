@@ -18,15 +18,15 @@ return [
     ],
     '503'       => [
         'body'  => [
-            '1' => 'Kanka está en mantenimiento ahora mismo. ¡Suele ser porque hay una actualización en camino!',
+            '1' => config('app.name') . ' está en mantenimiento ahora mismo. ¡Suele ser porque hay una actualización en camino!',
             '2' => 'Disculpa las molestias. Todo volverá a la normalidad en solo unos minutos.',
         ],
         'title' => 'Mantenimiento',
     ],
     '503-form'  => [
-        'body'  => 'No hemos podido guardar tus datos por alguna de las siguientes razones. Por favor, abre Kanka en un :link. Si la app está en mantenimiento, guarda tus datos en algún otro sitio hasta que la app vuelva a estar en funcionamiento y vuelve a intentarlo. En cambio, si te sale un mensaje diciendo "Checking your browser", puedes intentar retroceder y volver a darle a Guardar.',
+        'body'  => 'No hemos podido guardar tus datos por alguna de las siguientes razones. Por favor, abre ' . config('app.name') . ' en un :link. Si la app está en mantenimiento, guarda tus datos en algún otro sitio hasta que la app vuelva a estar en funcionamiento y vuelve a intentarlo. En cambio, si te sale un mensaje diciendo "Checking your browser", puedes intentar retroceder y volver a darle a Guardar.',
         'link'  => 'Nueva ventana',
         'title' => 'Ha ocurrido algo inesperado.',
     ],
-    'footer'    => 'Si necesitas más asistencia, contáctanos en hello@kanka.io o en :discord',
+    'footer'    => 'Si necesitas más asistencia, contáctanos en ' . config('mail.address.contact.address') . ' o en :discord',
 ];

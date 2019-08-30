@@ -23,9 +23,9 @@ return [
     'register'  => [
         'already_account'           => 'Hast du bereits einen Account?',
         'email'                     => [
-            'body'  => '<p>Willkommen bei kanka.io!</p><p>Dein Account wurde mit deiner Email Adresse erstellt.</p>',
+            'body'  => '<p>Willkommen bei ' . config('app.site_name') . '!</p><p>Dein Account wurde mit deiner Email Adresse erstellt.</p>',
             'login' => 'Login',
-            'title' => 'Willkommen bei kanka.io!',
+            'title' => 'Willkommen bei ' . config('app.site_name') . '!',
         ],
         'errors'                    => [
             'email_already_taken'   => 'Ein Account mit dieser Email ist bereits registriert.',

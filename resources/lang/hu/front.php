@@ -2,11 +2,11 @@
 
 return [
     'about'         => [
-        'description'   => 'A Kanka két szenvedélyes szerepjátékos abbéli vágyából született, hogy közösen felépítsenek és kezeljenek egy világot 2017 nyarán. Az akkor elérhető eszközöket kipróbálva arra jutottunk, hogy egyikük sem igazán felelt meg annak, amit akartunk, így nekiálltunk 2017 őszén a saját eszköztárunk kiépítésének.',
+        'description'   => 'A ' . config('app.name') . ' két szenvedélyes szerepjátékos abbéli vágyából született, hogy közösen felépítsenek és kezeljenek egy világot 2017 nyarán. Az akkor elérhető eszközöket kipróbálva arra jutottunk, hogy egyikük sem igazán felelt meg annak, amit akartunk, így nekiálltunk 2017 őszén a saját eszköztárunk kiépítésének.',
         'title'         => 'Névjegy',
     ],
     'campaigns'     => [
-        'description_full'  => 'A Kanka rendszerében sok kampány nyilvánosan látható mindenki számára. Ezen az oldalon az összes nyilvános kampányt, valamint a közösség néhány kiemelt kampányát láthatod.',
+        'description_full'  => 'A ' . config('app.name') . ' rendszerében sok kampány nyilvánosan látható mindenki számára. Ezen az oldalon az összes nyilvános kampányt, valamint a közösség néhány kiemelt kampányát láthatod.',
         'featured'          => [
             'description'   => 'A közösségünk lenyűgöző dolgokat készít, amelyek közül néhányat szeretnénk megmutatni - ezek a Kiemelt kampányok. Ezt a listát viszonylag gyakran frissítjuk, szóval térj vissza később is, ha még több kampányt szeretnél látni.',
             'title'         => 'Kiemelt kampányok',
@@ -18,10 +18,10 @@ return [
         'title'             => 'Nyilvános kampányok',
     ],
     'community'     => [
-        'description'   => 'A Kanka nemcsak egy alkalmazás, hanem világépítők, mesélők, szerepjátékosok és lelkes kreatívok virágzó közössége is.',
-        'discord'       => 'A Kanka Discord a legaktívabb hely, ahol az alkalmazásról, annak funkcióiról vagya megtalált hibákról beszélgethetsz, illetve segítséget kérhetsz vagy adhatsz.',
+        'description'   => 'A ' . config('app.name') . ' nemcsak egy alkalmazás, hanem világépítők, mesélők, szerepjátékosok és lelkes kreatívok virágzó közössége is.',
+        'discord'       => 'A ' . config('app.name') . ' Discord a legaktívabb hely, ahol az alkalmazásról, annak funkcióiról vagya megtalált hibákról beszélgethetsz, illetve segítséget kérhetsz vagy adhatsz.',
         'join'          => 'Csatlakozz hozzánk!',
-        'reddit'        => 'A Kanka subreddit egy nyugisabb hely, ahol a dolgokat hosszabb időkeretben beszélhetitek meg.',
+        'reddit'        => 'A ' . config('app.name') . ' subreddit egy nyugisabb hely, ahol a dolgokat hosszabb időkeretben beszélhetitek meg.',
         'title'         => 'Közösség',
     ],
     'contact'       => [
@@ -60,7 +60,7 @@ return [
             'description'   => 'Kövesd a karaktereket, a családjaikat, a hollétüket és még ennél is többet, mindig!',
             'title'         => 'Karakterek, családok, helyszínek',
         ],
-        'learn_more'        => 'Tudj meg többet a Kanka funkcióiról!',
+        'learn_more'        => 'Tudj meg többet a ' . config('app.name') . ' funkcióiról!',
         'maps'              => [
             'description'   => 'Tarts naprakész térképeket a világodról, annak városairól és kazamatáiról, adj hozzájuk hasznos jelölőket és hivatkozásokat!',
             'title'         => 'Térképek',
@@ -93,7 +93,7 @@ return [
     ],
     'footer'        => [
         'app'       => 'Alkalmazás',
-        'copyright' => '© 2017 - :current kanka.io. Minden jog fenntartva.',
+        'copyright' => '© 2017 - :current ' . config('app.site_name') . '. Minden jog fenntartva.',
         'navigation'=> 'Navigáció',
         'resources' => 'Dokumentumok',
         'social'    => 'Közösségi média',
@@ -107,8 +107,8 @@ return [
     ],
     'master'        => [
         'call_to_action'    => 'Regisztrálj most, nem kerül semmibe!',
-        'description'       => 'A Kanka egy könnyű és rugalmas eszköz online világépítésre és a szerepjátékos kampányaid kezelésére. Hozz létre és kezelj szereplőket, helyszíneket, szervezeteket, eseményeket és még sok minden mást.',
-        'title'             => 'Kanka',
+        'description'       => 'A ' . config('app.name') . ' egy könnyű és rugalmas eszköz online világépítésre és a szerepjátékos kampányaid kezelésére. Hozz létre és kezelj szereplőket, helyszíneket, szervezeteket, eseményeket és még sok minden mást.',
+        'title'             => '' . config('app.name'),
     ],
     'menu'          => [
         'about'     => 'Névjegy',
@@ -131,15 +131,15 @@ return [
         'tos'       => 'Szolgáltatási feltételek',
     ],
     'meta'          => [
-        'description'   => 'A Kanka egy rugalmas digitális világépítő és online szerepjátékos kampánykezelő',
-        'title'         => 'Kanka - Online szerepjátékos kampánykezelő és világépítő eszköz',
+        'description'   => 'A ' . config('app.name') . ' egy rugalmas digitális világépítő és online szerepjátékos kampánykezelő',
+        'title'         => config('app.name') . ' - Online szerepjátékos kampánykezelő és világépítő eszköz',
     ],
     'privacy'       => [
         'description'   => 'Érvényes 2018. május 25-től.',
         'title'         => 'Adatvédelmi nyilatkozat',
     ],
     'release'       => [
-        'description'   => 'A Kanka folyamatosan növekszik és fejlődik, és szeretnénk, hogy tudjatok minden király dologról, amit hozzáadunk.',
+        'description'   => 'A ' . config('app.name') . ' folyamatosan növekszik és fejlődik, és szeretnénk, hogy tudjatok minden király dologról, amit hozzáadunk.',
         'title'         => 'Verziók',
     ],
     'roadmap'       => [

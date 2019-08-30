@@ -103,7 +103,7 @@ return [
         'is_recurring'  => 'Ein Event kann wiederkehrend sein. Es wird dann jedes Jahr am gleichen Tag erscheinen.',
         'months'        => 'Dein Kalender sollte mindestens 2 Monate haben.',
         'moons'         => 'Hinzugefügte Monde werden bei jedem Vollmond im Kalender angezeigt.',
-        'seasons'       => 'Erstelle Jahreszeiten in dem du den jeweiligen Start festlegst. Kanka übernimmt den Rest.',
+        'seasons'       => 'Erstelle Jahreszeiten in dem du den jeweiligen Start festlegst. ' . config('app.name') . ' übernimmt den Rest.',
         'weekdays'      => 'Lege die Namen deiner Wochentage fest. Es werden mindestens 2 Wochentage benötigt.',
         'years'         => 'Manche Jahre sind so wichtig, dass sie ihren eigenen Namen haben.',
     ],

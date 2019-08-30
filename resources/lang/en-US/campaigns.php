@@ -8,7 +8,7 @@ return [
     ],
     'invites'   => [
         'email' => [
-            'subject'   => ':name has invited you to join their campaign \':campaign\' on kanka.io! Use the following link to accept their invitation.',
+            'subject'   => ':name has invited you to join their campaign \':campaign\' on ' . config('app.site_name') . '! Use the following link to accept their invitation.',
         ],
     ],
 ];
